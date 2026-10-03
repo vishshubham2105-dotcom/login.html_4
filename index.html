@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>login page </title>
+  <style>
+    img {
+      border-radius: 50%;
+      margin: 10px;
+      border: 5px solid black;
+    }
+
+    .box {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+
+    }
+
+    header {
+      background-color: green;
+      color: white;
+      text-align: center;
+      text-transform: uppercase;
+      border-radius: 15px;
+    }
+
+    label {
+      justify-content: center;
+      display: block;
+    }
+
+    #username,
+    #password {
+      padding: 5px;
+      text-align: center;
+      background-color: rgb(228, 228, 234);
+      border-color: black;
+      color: white;
+
+    }
+
+    input {
+      color: white;
+    }
+
+    button {
+      text-decoration: wavy;
+      border: block;
+      padding: 5px;
+    }
+
+    #login-btn {
+      background-color: green;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    #forgot-password-btn {
+      background-color: lightgray;
+      color: black;
+      padding: 10px 20px;
+      border: black;
+      border-radius: 5px;
+      cursor: pointer;
+      border: 1px solid black;
+    }
+  </style>
+</head>
+
+<body class="box">
+  <div id="image">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5Z60cLqxl2xOceomndroxzXJVn993PhvHpZ9ou16GNQ&s=10"
+      alt="login image" width="300" height="300">
+  </div>
+  <div>
+    <header>
+      <h1>Login</h1>
+    </header>
+    <section class="login-form">
+      <div>
+        <label for="username">Username:</label>
+        <input type="text" name="username" id="username" placeholder="Enter your username">
+      </div>
+      <br>
+      <div>
+        <label for="password">Password:</label>
+        <input type="password" name="password" id="password" placeholder="Enter your password">
+      </div>
+      <br><br>
+      <button type="submit" id="login-btn">Login</button>
+      <button type="submit" id="forgot-password-btn">forgot password</button>
+    </section>
+  </div>
+</body>
+
+</html>
